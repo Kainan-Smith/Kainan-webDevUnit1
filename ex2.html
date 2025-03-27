@@ -19,7 +19,12 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+            var container = document.getElementById("container");
+        function addParagraph() {
+            var newP = document.createElement("p");
+            container.appendChild(newP);
+            newP.innerHTML = "This is a new paragraph.";
+        }
     </script>
 </body>
 </html>

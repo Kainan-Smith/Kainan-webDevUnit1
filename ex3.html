@@ -21,7 +21,12 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+            var myList = document.getElementById("myList");
+        function insertItem() {
+            var newLi = document.createElement("Li");
+            myList.appendChild(newLi);
+            newLi.innerHTML = "New Item";
+        }
     </script>
 </body>
 </html>
